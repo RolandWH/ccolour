@@ -69,7 +69,7 @@ int main()
     }
     else if (!strcmp(choice, "NO IM SCARED\n"))
     {
-        ChangeColour("YOU COWARD", RED_FOREGROUND, DEFAULT_COLOR, true);
+        ChangeColour("YOU COWARD\n", RED_FOREGROUND, DEFAULT_COLOR, true);
     }
 
     return 0;
