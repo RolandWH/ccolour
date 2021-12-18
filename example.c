@@ -37,8 +37,6 @@ void rainbow()
 
 int main()
 {
-    ipspum();
-    return 0;
     ChangeColour(
         "ERROR: This is a big scary error\n",
         RED_FOREGROUND,
