@@ -21,13 +21,7 @@ void rainbow()
         for (int bg = 0; bg < 8; bg++)
         {
             char msg[18];
-
-            // Use secure version of printf on windows
-            #ifdef _WIN32
-            sprintf_s(msg, 18, "%s ON %s\n", COLOURS[fg], COLOURS[bg]);
-            #else
-            sprintf(msg, "%s ON %s\n", COLOURS[fg], COLOURS[bg]);
-            #endif // _WIN32
+            snprintf(msg, 18, "%s ON %s\n", COLOURS[fg], COLOURS[bg]);
 
             ChangeColour(msg, bg + 40, fg + 30, true);
         }
